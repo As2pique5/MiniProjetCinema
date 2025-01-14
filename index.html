@@ -7,10 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <div class="navbar">
+            <h1 id="site-title">🎬 Ciné au Village</h1>
+            <button id="theme-toggle">🌙 Mode Sombre</button>
+        </div>
+    </header>
     <h1>Films Tendances de l'Année !</h1>
     <div id="movies-container"></div>
     <button id="load-more">Charger plus de films</button>
 
     <script type="module" src="js/index.js"></script>
+    <script src="js/theme.js"></script>
+    <div id="loader" class="loader" style="display: none;"></div>
+
 </body>
 </html>

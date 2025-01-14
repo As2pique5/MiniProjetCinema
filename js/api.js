@@ -18,7 +18,7 @@ export async function getTrendingMovies(year = "2024", page = 1) {
     }
 }
 
-// Fonction de recherche de films
+// Fonction de recherche de films avec gestion d'erreurs
 export async function searchMovies(query, page = 1) {
     try {
         const response = await fetch(`${BASE_URL}?apikey=${API_KEY}&s=${query}&page=${page}`);
@@ -26,14 +26,14 @@ export async function searchMovies(query, page = 1) {
         if (data.Response === "True") {
             return data.Search;
         } else {
-            console.warn(data.Error);
-            return [];
+            throw new Error(data.Error);
         }
     } catch (error) {
-        console.error("Erreur lors de la recherche :", error);
-        return [];
+        console.error("Erreur de recherche :", error);
+        throw error;  // Propager l'erreur
     }
 }
+
 
 // Fonction pour récupérer les détails d'un film
 export async function getMovieDetails(id) {

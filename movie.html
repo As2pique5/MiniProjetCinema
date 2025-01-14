@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+      <nav>
+          <a href="index.html" id="home-link">🏠 Retour à l'accueil</a>
+          <button id="theme-toggle">🌙 Mode Sombre</button>
+      </nav>
+    </header>
     <h1 id="movie-title">Titre du film</h1>
 
     <div id="movie-details">
@@ -21,5 +27,8 @@
     </div>
 
     <script type="module" src="js/movie.js"></script>
+    <script src="js/theme.js"></script>
+    <div id="loader" class="loader" style="display: none;"></div>
+
 </body>
 </html>

@@ -29,3 +29,16 @@ loadMoreButton.addEventListener("click", () => {
 
 // Chargement initial
 displayTrendingMovies();
+
+const loader = document.getElementById("loader");
+
+// Afficher le loader
+function showLoader() {
+    loader.style.display = "block";
+}
+
+// Masquer le loader
+function hideLoader() {
+    loader.style.display = "none";
+}
+
