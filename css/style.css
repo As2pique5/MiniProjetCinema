@@ -1,7 +1,11 @@
+/* Application de la nouvelle police */
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
+  font-family: 'Inter', sans-serif;
   background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #1c1c1e;
+  text-align: center;
 }
 
 #movies-container {
@@ -227,4 +231,45 @@ header {
 #search-link:hover {
   background-color: #218838;
   text-decoration: none;
+}
+
+/* Style des cartes de films */
+.movie-card {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Effet au survol */
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay "En savoir plus" */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.movie-card:hover .overlay {
+  opacity: 1;
 }

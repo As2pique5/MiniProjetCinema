@@ -13,9 +13,14 @@ async function displayTrendingMovies() {
         movieDiv.classList.add("movie");
 
         movieDiv.innerHTML = `
-            <img src="${movie.Poster !== "N/A" ? movie.Poster : 'assets/images/placeholder.png'}" alt="${movie.Title}">
-            <h3>${movie.Title}</h3>
-            <a href="movie.html?id=${movie.imdbID}">En savoir plus</a>
+            <div class="movie-card" onclick="window.location.href='movie.html?id=${movie.imdbID}'">
+                <img src="${movie.Poster !== "N/A" ? movie.Poster : 'assets/images/placeholder.png'}" alt="${movie.Title}">
+                <div class="overlay">
+                    <p>En savoir plus</p>
+                </div>
+                <h3>${movie.Title}</h3>
+            </div>
+
         `;
         moviesContainer.appendChild(movieDiv);
     });
