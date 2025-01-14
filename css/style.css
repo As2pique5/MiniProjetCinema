@@ -18,6 +18,7 @@ body {
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .movie img {
@@ -39,4 +40,36 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+#search-input {
+  width: 50%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+#load-more {
+  padding: 10px 20px;
+  margin: 20px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#load-more:hover {
+  background-color: #218838;
 }
