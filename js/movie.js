@@ -34,3 +34,16 @@ async function displayMovieDetails() {
 
 // Chargement des détails au lancement de la page
 displayMovieDetails();
+
+const loader = document.getElementById("loader");
+
+// Afficher le loader
+function showLoader() {
+    loader.style.display = "block";
+}
+
+// Masquer le loader
+function hideLoader() {
+    loader.style.display = "none";
+}
+

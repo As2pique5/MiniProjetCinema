@@ -104,3 +104,110 @@ button:hover {
 #movie-info strong {
   color: #007BFF;
 }
+
+header {
+  background-color: #007BFF;
+  padding: 10px;
+  text-align: left;
+}
+
+#home-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#home-link:hover {
+  text-decoration: underline;
+}
+
+/* Mode Sombre */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode header {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .movie, .dark-mode #movie-info {
+  background-color: #1f1f1f;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+#theme-toggle {
+  padding: 8px 15px;
+  margin-left: 20px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background-color: #666;
+}
+
+
+/* HEADER */
+header {
+  background-color: #007BFF;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#site-title {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0;
+}
+
+#theme-toggle {
+  padding: 8px 15px;
+  background-color: #444;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+#theme-toggle:hover {
+  background-color: #666;
+}
+
+/* Loader animé avec CSS */
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #007BFF;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
