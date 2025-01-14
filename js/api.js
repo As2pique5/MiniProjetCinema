@@ -34,3 +34,20 @@ export async function searchMovies(query, page = 1) {
         return [];
     }
 }
+
+// Fonction pour récupérer les détails d'un film
+export async function getMovieDetails(id) {
+    try {
+        const response = await fetch(`${BASE_URL}?apikey=${API_KEY}&i=${id}&plot=full`);
+        const data = await response.json();
+        if (data.Response === "True") {
+            return data;
+        } else {
+            console.warn(data.Error);
+            return null;
+        }
+    } catch (error) {
+        console.error("Erreur lors de la récupération des détails du film :", error);
+        return null;
+    }
+}
