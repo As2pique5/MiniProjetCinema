@@ -24,7 +24,7 @@ Ce projet consiste en la création d'une application web pour un cinéma de vill
 
 1. **Cloner le dépôt :**
    ```bash
-   git clone https://github.com/<votre-utilisateur>/MiniProjetCinema.git
+   git clone https://github.com/As2pique5/MiniProjetCinema.git
    ```
 
 2. **Se rendre dans le dossier du projet :**
@@ -50,13 +50,10 @@ Ce projet consiste en la création d'une application web pour un cinéma de vill
    http://127.0.0.1:5500/index.html
    ```
 
-## 🖼️ Captures d'écran (optionnel)
-
-*(Ajouter des captures d'écran du site ici)*
 
 ## 👨‍💻 Contributeurs
-- **[Votre Prénom Nom]** - Développeur principal
-- **[Nom de votre collaborateur]** - Contribution secondaire
+- **DANG Job Césaire** - Contributeur n°1
+- **RAVELOARISON Mélodie** - Contributeur n°2
 
 ## 🔒 Licence
 Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus d'informations.
