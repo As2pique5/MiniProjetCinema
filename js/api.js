@@ -1,7 +1,7 @@
 const API_KEY = "f4c57c5e";  // clé OMDb
 const BASE_URL = "https://www.omdbapi.com/";
 
-// Fonction pour récupérer les films tendances (ex: films de 2024)
+// Fonction pour récupérer les films tendances
 export async function getTrendingMovies(year = "2024", page = 1) {
     try {
         const response = await fetch(`${BASE_URL}?apikey=${API_KEY}&s=movie&y=${year}&page=${page}`);

@@ -7,12 +7,12 @@ const loadMoreButton = document.getElementById("load-more");
 let currentPage = 1;
 let currentQuery = "";
 
-// ✅ Fonction pour afficher un message d'erreur
+// Fonction pour afficher un message d'erreur
 function displayError(message) {
     searchResults.innerHTML = `<p style="color: red; font-weight: bold;">${message}</p>`;
 }
 
-// ✅ Fonction pour afficher/masquer le loader
+// Fonction pour afficher/masquer le loader
 function showLoader() {
     searchResults.innerHTML = `
         <div class="loader"></div>
@@ -24,7 +24,7 @@ function hideLoader() {
     if (loader) loader.remove();
 }
 
-// ✅ Fonction pour afficher les résultats de recherche
+// Fonction pour afficher les résultats de recherche
 async function displaySearchResults(query, page = 1) {
     if (!query) return;
 
@@ -59,7 +59,7 @@ async function displaySearchResults(query, page = 1) {
     }
 }
 
-// ✅ Écouteur pour la recherche en temps réel
+// Écouteur pour la recherche en temps réel
 searchInput.addEventListener("input", () => {
     currentQuery = searchInput.value.trim();
     currentPage = 1;
@@ -71,7 +71,7 @@ searchInput.addEventListener("input", () => {
     }
 });
 
-// ✅ Bouton pour charger plus de résultats
+// Bouton pour charger plus de résultats
 loadMoreButton.addEventListener("click", () => {
     if (currentQuery.length > 2) {
         currentPage++;

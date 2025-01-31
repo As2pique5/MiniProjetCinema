@@ -14,7 +14,7 @@ async function displayTrendingMovies() {
 
         movieDiv.innerHTML = `
             <div class="movie-card" onclick="window.location.href='movie.html?id=${movie.imdbID}'">
-                <img src="${movie.Poster !== "N/A" ? movie.Poster : 'assets/images/placeholder.png'}" alt="${movie.Title}">
+                <img src="${movie.Poster !== "N/A" ? movie.Poster : 'assets/images/placeholder.jpeg'}" alt="${movie.Title}">
                 <div class="overlay">
                     <p>En savoir plus</p>
                 </div>
